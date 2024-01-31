@@ -1,0 +1,13 @@
+<VirtualHost *:80> 
+    DocumentRoot "C:/laragon/www/BookDays/public"
+    ServerName BookDays.test
+    ServerAlias *.BookDays.test
+    <Directory "C:/laragon/www/BookDays/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+# If you want to use SSL, enable it by going to Menu > Apache > SSL > Enabled
+
+file adrees C:\laragon\etc\apache2\sites-enabled
