@@ -1,0 +1,7 @@
+New features that can be added :
+
+delet the requarment the image and categosy in edite and create post.
+
+add view counter increment.
+
+show the number of the view in the index for post or blog.
