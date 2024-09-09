@@ -30,9 +30,9 @@ class CustomOrdersController extends Controller
                     return $query->orWhere(Order::COURIER, $courier->{Courier::ID});
                 });
         })
-        ->with(['senderProvince', 'senderCity', 'recipientProvince', 'recipientCity', 'courierInfo', 'transactions', 'shipmentTransaction'])
-        ->whereIn(Order::ID, $request->post('ids'))
-        ->get();
+            ->with(['senderProvince', 'senderCity', 'recipientProvince', 'recipientCity', 'courierInfo', 'transactions', 'shipmentTransaction'])
+            ->whereIn(Order::ID, $request->post('ids'))
+            ->get();
 
         if ($_orders->isEmpty()) {
             alert()->error('سفارشی یافت نشد');
@@ -71,13 +71,13 @@ class CustomOrdersController extends Controller
                 'کد پیگیری سرویس دهنده' => $trackingCodes && is_array($trackingCodes) ? implode(', ', $trackingCodes) : '',
 
                 'هزینه ارسال (ریال)'           => $sendPrice = $order->transactions
-                        ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::NEW_ORDER, TransactionEnum::DEPOSIT, TransactionEnum::FINAL_CLEARANCE])->sum(Transaction::AMOUNT) * -10,
+                    ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::NEW_ORDER, TransactionEnum::DEPOSIT, TransactionEnum::FINAL_CLEARANCE])->sum(Transaction::AMOUNT) * -10,
                 'هزینه خدمات (ریال)'           => $servicePrice = $order->transactions
-                        ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::SERVICE_COMMISSION])->sum(Transaction::AMOUNT) * -10,
+                    ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::SERVICE_COMMISSION])->sum(Transaction::AMOUNT) * -10,
                 'هزینه بسته بندی و چاپ (ریال)' => $packingPrice = $order->transactions
-                        ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::PACKAGING])->sum(Transaction::AMOUNT) * -10,
+                    ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::PACKAGING])->sum(Transaction::AMOUNT) * -10,
                 'هزینه جمع آوری بسته (ریال)'   => $pickupPrice = $order->transactions
-                        ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::PICKED_UP])->sum(Transaction::AMOUNT) * -10,
+                    ->whereIn(Transaction::TYPE_ENUM, [TransactionEnum::PICKED_UP])->sum(Transaction::AMOUNT) * -10,
             ];
 
             $shifts[$order->{Order::SHIPMENT}] = $order->{Order::SHIPMENT};

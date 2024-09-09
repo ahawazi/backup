@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Order Report API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Generate Excel Report",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer YOUR_ACCESS_TOKEN",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"date_from\": \"2024-09-01\",\n    \"date_to\": \"2024-09-08\",\n    \"status\": \"completed\",\n    \"store_ids\": [1, 2]\n}"
+        },
+        "url": {
+          "raw": "http://localhost/api/v2/report/excel",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["api", "v2", "report", "excel"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Download Excel Report",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer YOUR_ACCESS_TOKEN",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/api/v2/report/excel?file=orders_report_TIMESTAMP.xlsx",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["api", "v2", "report", "excel"],
+          "query": [
+            {
+              "key": "file",
+              "value": "orders_report_TIMESTAMP.xlsx"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
