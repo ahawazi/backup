@@ -1,0 +1,49 @@
+<x-layouts.app>
+    <div class="container grid gap-12 p-6 mx-auto lg:grid-cols-3">
+        <!-- Left Section: Image and Details -->
+        <div class="lg:col-span-2">
+            <!-- Insurance Image -->
+            <div class="overflow-hidden transition-shadow duration-300 shadow-lg rounded-3xl hover:shadow-xl">
+                <img src="{{ $insurance->getFirstMediaUrl('logo') }}" alt="{{ $insurance->name }}"
+                     class="object-cover w-full h-auto rounded-3xl aspect-video">
+            </div>
+
+            <!-- Insurance Details Card -->
+            <div class="relative p-6 mx-4 -mt-8 bg-white shadow-lg sm:-mt-24 rounded-3xl md:mx-8 md:p-8">
+                <h1 class="mb-2 text-3xl font-bold md:text-5xl text-slate-800">
+                    {{ $insurance->name }}
+                </h1>
+                <p class="text-lg text-slate-500">
+                    {{ __('Insurance details') }}: {!! $insurance->body !!}
+                </p>
+
+                <div class="absolute flex items-center gap-1 text-sm font-semibold top-4 right-4 text-slate-500">
+                    <x-icon name="heroicon-o-tag" class="w-5 h-5" />
+                    {{ __('Category or Tag') }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: External URL -->
+        <div class="flex flex-col gap-6 lg:col-span-1">
+            <div class="p-6 shadow-md bg-blue-50 rounded-xl">
+                <h2 class="mb-4 text-xl font-semibold text-slate-700">
+                    {{ __('External url') }}:
+                </h2>
+                <div class="flex items-center">
+                    <a href="{{ $insurance->external_url }}" target="_blank"
+                       class="flex items-center px-3 py-2 transition duration-200 rounded-lg bg-fuchsia-100 text-fuchsia-600 hover:bg-fuchsia-200">
+                        {{ $insurance->external_url }}
+                        <x-icon name="heroicon-c-link" class="w-4 h-4 ml-2 text-fuchsia-400" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-48"></div>
+
+    <div class="-mb-48">
+        <livewire:subscription-form />
+    </div>
+</x-layouts.app>
