@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>yasmin_piercing</title>
+  <meta content="dr_lava" name="dr_lava">
+  <meta content="drlava web programing" name="drlava">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .content {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    .content h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .content p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .content .btn {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .content .btn:hover {
+      background: #0056b3;
+    }
+
+    .img-fluid {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .btn-custom {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .btn-custom svg {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .btn-custom svg:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">jassmine piercing</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="term.html">terms</a></li>
+          <li><a href="programare.html">programare</a></li>
+          <li><a class="active" href="galeri.html">gallery</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://discord.gg/hPrDeaj" class="discord"><i class="bi bi-discord"></i></a>
+        <a href="https://t.me/amirrezamohajeri" class="telegram"><i class="bi bi-telegram"></i></a>
+        <a href="https://istagram.com/amirrezamohajeri" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="slider">
+      <div class="slide active">
+        <img src="img/1.jpg" alt="1">
+      </div>
+      <div class="slide">
+        <img src="img/2.jpg" alt="2">
+      </div>
+      <div class="slide">
+        <img src="img/3.jpg" alt="3">
+      </div>
+      <div class="slide">
+        <img src="img/4.jpg" alt="4">
+      </div>
+      <div class="slide">
+        <img src="img/5.jpg" alt="5">
+      </div>
+    </section>
+
+    <section class="content container mt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0">
+          <h3>لورم ایپسوم متن ساختگی</h3>
+          <p class="fst-italic">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+          </p>
+          <a href="#" class="btn">بیشتر بخوانید</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="btn-custom">
+      <svg width="200" height="50">
+        <rect x="10" y="10" rx="15" ry="15" width="180" height="30" style="fill:silver; stroke:grey; stroke-width:2" />
+        <text x="50" y="35" fill="black">برای دیدن بیشتر اینجا کلیک کنید</text>
+      </svg>
+    </div>
+  </main>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[currentSlide].classList.add('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+    }
+
+    showSlide();
+    setInterval(showSlide, 5000);
+  </script>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>dr_lava</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
