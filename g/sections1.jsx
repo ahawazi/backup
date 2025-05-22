@@ -1,0 +1,237 @@
+<div className="flex flex-row min-h-0 gap-8 px-2 py-6 overflow-x-auto bg-amber-50 sm:py-12 sm:items-start sm:justify-center" dir="rtl">
+    {/* section1 */}
+    <section className="flex flex-col items-center w-full max-w-md min-w-[320px] sm:min-w-0 p-4 bg-white shadow-xl sm:max-w-xl sm:p-8 rounded-2xl md:w-1/2">
+        <div className="mb-4">
+            <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-amber-100">
+                <img
+                    src="https://gimi.me/images/logo-9264992938b895aeb4ec14e92cbcd311.png?vsn=d"
+                    alt="logo"
+                    className="w-7 h-7 sm:w-8 sm:h-8 text-amber-400"
+                />
+            </span>
+        </div>
+        <h2 className="mb-2 text-xl font-bold leading-tight text-center sm:text-2xl text-slate-800">
+            به فعالیت کاربر امتیاز بدید تا درگیرش کنید
+        </h2>
+        <p className="mb-6 text-sm leading-relaxed text-center sm:mb-8 text-slate-500 sm:text-base">
+            میتونید برای خرید و کارهایی که کاربر انجام میده امتیاز
+            تخصیص بدید و به این وسیله تعامل کاربرهاتون رو ۱۰ برابر
+            کنید.
+        </p>
+        <div className="flex flex-col gap-4 w-full max-w-[320px] mx-auto sm:w-[370px]">
+            <div className="flex items-center justify-between bg-white rounded-[14px] border border-amber-100 shadow-sm px-3 py-2 sm:px-5 sm:py-3 flex-row-reverse text-right">
+                <div className="flex flex-col items-end">
+                    <span className="flex items-center gap-1 text-amber-500 font-semibold text-sm sm:text-[15px] justify-end">
+                        <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z" />
+                        </svg>
+                        ۵ امتیاز
+                    </span>
+                    <span className="mt-1 text-xs text-amber-400">
+                        به ازای هر ۱۰٬۰۰۰ تومان خرید
+                    </span>
+                </div>
+                <div className="flex flex-row-reverse items-center gap-2">
+                    <span className="font-medium text-amber-700 text-sm sm:text-[15px]">
+                        ثبت سفارش
+                    </span>
+                    <span className="inline-flex items-center justify-center w-6 h-6 ml-2 rounded-full bg-amber-50">
+                        <svg
+                            className="w-4 h-4 text-amber-400"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <circle
+                                cx="9"
+                                cy="21"
+                                r="1"
+                                stroke="currentColor"
+                            />
+                            <circle
+                                cx="20"
+                                cy="21"
+                                r="1"
+                                stroke="currentColor"
+                            />
+                            <path
+                                d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"
+                                stroke="currentColor"
+                            />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div className="flex items-center justify-between bg-white rounded-[14px] border border-amber-100 shadow-sm px-3 py-2 sm:px-5 sm:py-3 flex-row-reverse text-right">
+                <div className="flex flex-col items-end">
+                    <span className="flex items-center gap-1 text-amber-500 font-semibold text-sm sm:text-[15px] justify-end">
+                        <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z" />
+                        </svg>
+                        ۱۰۰ امتیاز
+                    </span>
+                    <span className="mt-1 text-xs text-amber-400">
+                        سالی یک بار به عنوان هدیه تولد
+                    </span>
+                </div>
+                <div className="flex flex-row-reverse items-center gap-2">
+                    <span className="font-medium text-amber-700 text-sm sm:text-[15px]">
+                        هدیه تولد
+                    </span>
+                    <span className="inline-flex items-center justify-center w-6 h-6 ml-2 rounded-full bg-amber-50">
+                        <svg
+                            className="w-4 h-4 text-amber-400"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M12 8v4"
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                            />
+                            <path
+                                d="M8 12h8"
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                            />
+                            <circle
+                                cx="12"
+                                cy="8"
+                                r="4"
+                                stroke="currentColor"
+                            />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div className="flex items-center justify-between bg-white rounded-[14px] border border-amber-100 shadow-sm px-3 py-2 sm:px-5 sm:py-3 flex-row-reverse text-right">
+                <div className="flex flex-col items-end">
+                    <span className="flex items-center gap-1 text-amber-500 font-semibold text-sm sm:text-[15px] justify-end">
+                        <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z" />
+                        </svg>
+                        ۱۰۰ امتیاز
+                    </span>
+                    <span className="mt-1 text-xs text-amber-400">
+                        هدیه ایجاد حساب کاربری
+                    </span>
+                </div>
+                <div className="flex flex-row-reverse items-center gap-2">
+                    <span className="font-medium text-amber-700 text-sm sm:text-[15px]">
+                        ایجاد حساب کاربری
+                    </span>
+                    <span className="inline-flex items-center justify-center w-6 h-6 ml-2 rounded-full bg-amber-50">
+                        <svg
+                            className="w-4 h-4 text-amber-400"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <circle
+                                cx="12"
+                                cy="8"
+                                r="4"
+                                stroke="currentColor"
+                            />
+                            <path
+                                d="M4 20c0-4 8-4 8-4s8 0 8 4"
+                                stroke="currentColor"
+                            />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* section2 */}
+    <section className="flex flex-col items-center w-full max-w-md min-w-[320px] sm:min-w-0 p-4 bg-white shadow-xl sm:max-w-xl sm:p-8 rounded-2xl md:w-1/2">
+        <div className="mb-4">
+            <span className="inline-flex items-center justify-center w-12 h-12 rounded-full sm:w-14 sm:h-14 bg-amber-100">
+                <img
+                    src="https://gimi.me/images/logo-9264992938b895aeb4ec14e92cbcd311.png?vsn=d"
+                    alt="logo"
+                    className="w-7 h-7 sm:w-8 sm:h-8 text-amber-400"
+                />
+            </span>
+        </div>
+        <h2 className="mb-2 text-xl font-bold leading-tight text-center sm:text-2xl text-slate-800">
+            پنل امتیازی اختصاصی شما
+        </h2>
+        <p className="mb-6 text-sm leading-relaxed text-center sm:mb-8 text-slate-500 sm:text-base">
+            رنگ بندی و مشخصات پنلتون رو مطابق با برندتون تعیین کنید
+            و در اختیار مشتری هاتون بذارید تا از طریق اون
+            امتیازهاشون رو مدیریت کنن و تخفیف بگیرن
+        </p>
+        <div className="w-full max-w-[320px] mx-auto p-4 sm:p-6 bg-white rounded-[20px] shadow-[0_4px_32px_0_rgba(31,41,55,0.08)] border border-amber-100"
+            style={{
+                boxShadow: "0 4px 32px 0 rgba(31,41,55,0.08)",
+                borderRadius: "20px",
+                maxWidth: "320px",
+                minWidth: "280px",
+            }}
+        >
+            <div className="flex flex-row items-center justify-start mb-4 sm:mb-5">
+                <span className="inline-flex items-center justify-center rounded-full w-7 h-7 sm:w-8 sm:h-8 bg-amber-100">
+                    <img
+                        src="https://gimi.me/images/logo-9264992938b895aeb4ec14e92cbcd311.png?vsn=d"
+                        alt="logo"
+                        className="w-4 h-4 sm:w-5 sm:h-5"
+                        draggable="false"
+                        style={{ userSelect: "none" }}
+                    />
+                </span>
+                <span className="font-semibold text-sm sm:text-[16px] text-gray-800 mr-3">
+                    شما 9,152 امتیاز دارید!
+                </span>
+            </div>
+            <div className="flex items-center justify-between w-full mb-4 sm:mb-5 px-3 sm:px-4 py-2 sm:py-3 border border-amber-200 rounded-[12px] bg-white text-gray-700 text-sm sm:text-[15px] cursor-pointer select-none">
+                <span className="font-medium text-amber-500">
+                    انتخاب جایزه
+                </span>
+                <span className="flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 text-amber-400">
+                    <svg
+                        className="w-4 h-4 sm:w-5 sm:h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            d="M19 9l-7 7-7-7"
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        />
+                    </svg>
+                </span>
+            </div>
+            <button
+                className="w-full py-2 sm:py-3 rounded-[12px] bg-amber-400 text-white font-bold text-sm sm:text-[16px] shadow-none hover:bg-amber-400 cursor-not-allowed"
+                style={{
+                    pointerEvents: "none",
+                    fontFamily: "inherit",
+                    boxShadow: "none",
+                }}
+                disabled
+            >
+                پرداخت
+            </button>
+        </div>
+    </section>
+</div>
